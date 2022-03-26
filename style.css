@@ -5,6 +5,7 @@
 
 h2 {
   font-size: 1.8rem;
+  margin-bottom: 0.3rem;
 }
 
 html {
@@ -12,7 +13,7 @@ html {
   background-color: #121417;
   color: #959eac;
   line-height: calc(24 / 15);
-  font-size: 0.9rem;
+  font-size: 15px;
   margin: 0;
   padding: 0;
 }
@@ -74,8 +75,8 @@ label input:checked ~ span {
 }
 
 .circle.full {
-  height: 2rem;
-  width: 2rem;
+  height: 2.5rem;
+  width: 2.5rem;
 }
 
 .circle.circle__button {
@@ -92,7 +93,7 @@ label input:checked ~ span {
   display: grid;
   -ms-grid-columns: (1fr)[5];
       grid-template-columns: repeat(5, 1fr);
-  gap: 2rem;
+  gap: 1.5rem;
   margin: 1.8rem 0;
 }
 
@@ -121,7 +122,7 @@ button:hover {
 .card {
   background: radial-gradient(98.96% 98.96% at 50% 0%, #232a34 0%, #181e27 100%);
   border-radius: 1em;
-  max-width: 23rem;
+  max-width: 25rem;
   margin: auto;
   padding: 2rem;
   position: absolute;
@@ -161,7 +162,7 @@ button:hover {
 }
 
 .fs-400 {
-  font-size: 0.9rem;
+  font-size: 15px;
 }
 
 .fw-400 {
