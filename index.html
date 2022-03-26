@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js"></script>
+
+    <title>Frontend Mentor | Interactive rating component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card flow-grid shown" data-shownByDefault="false">
+      <div class="circle full">
+        <img alt="" src="./images/icon-star.svg" />
+      </div>
+
+      <!-- Rating state start -->
+
+      <h2>How did we do?</h2>
+      Please let us know how we did with your support request. All feedback is
+      appreciated to help us improve our offering!
+
+      <div class="rating" id="rating-card">
+        <label
+          ><input type="radio" name="rating" value="1" /><span
+            role="button"
+            aria-label="1"
+            class="circle circle__button full"
+            >1</span
+          ></label
+        >
+        <label
+          ><input type="radio" name="rating" value="2" /><span
+            role="button"
+            aria-label="2"
+            class="circle circle__button full"
+            >2</span
+          ></label
+        >
+        <label
+          ><input type="radio" name="rating" value="3" /><span
+            role="button"
+            aria-label="3"
+            class="circle circle__button full"
+            >3</span
+          ></label
+        >
+        <label
+          ><input type="radio" name="rating" value="4" /><span
+            role="button"
+            aria-label="4"
+            class="circle circle__button full"
+            >4</span
+          ></label
+        >
+        <label
+          ><input type="radio" name="rating" value="5" /><span
+            role="button"
+            aria-label="5"
+            class="circle circle__button full"
+            >5</span
+          ></label
+        >
+      </div>
+      <button onclick="sendRating()">Submit</button>
+
+      <!-- Rating state end -->
+    </div>
+
+    <!-- Thank you state start -->
+    <div
+      class="card flow-grid"
+      data-type="no-header"
+      id="thank-you-card"
+      data-shownByDefault="false"
+    >
+      <img
+        class="center"
+        data-type="header"
+        alt=""
+        src="./images/illustration-thank-you.svg"
+      />
+      <div class="circle tc-primary fs-400 fw-400 no-text-transform">
+        You selected
+        <span id="selected-rate">x</span>
+        out of 5
+      </div>
+
+      <h2 class="text-center">Thank you!</h2>
+      <p class="text-center">
+        We appreciate you taking the time to give a rating. If you ever need
+        more support, don’t hesitate to get in touch!
+      </p>
+    </div>
+
+    <!-- Thank you state end -->
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://github.com/DennisSimon" target="_blank">Dennis Simon</a>.
+    </div>
+  </body>
+</html>
